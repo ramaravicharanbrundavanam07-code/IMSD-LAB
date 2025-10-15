@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+    <style>
+        /* -----------------------------
+           i. SIMPLE SELECTORS
+        ----------------------------- */
+
+        /* Element selector */
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #unique {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group selector */
+        h1, h2, h3 {
+            text-align: center;
+            color: purple;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* -----------------------------
+           ii. COMBINATOR SELECTORS
+        ----------------------------- */
+
+        /* Descendant selector (div p = all p inside div) */
+        div p {
+            color: brown;
+        }
+
+        /* Child selector (div > p = direct child p only) */
+        div > p {
+            font-style: italic;
+        }
+
+        /* Adjacent sibling selector (h2 + p = p immediately after h2) */
+        h2 + p {
+            color: red;
+        }
+
+        /* General sibling selector (h2 ~ p = all p after h2 in same parent) */
+        h2 ~ p {
+            text-decoration: underline;
+        }
+
+        /* -----------------------------
+           iii. PSEUDO-CLASS SELECTOR
+        ----------------------------- */
+
+        a:hover {
+            color: orange; /* when mouse hovers */
+        }
+
+        p:first-child {
+            color: darkgreen; /* first paragraph inside parent */
+        }
+
+        /* -----------------------------
+           iv. PSEUDO-ELEMENT SELECTOR
+        ----------------------------- */
+
+        p::first-letter {
+            font-size: 24px;
+            color: red;
+        }
+
+        p::after {
+            content: " (End of paragraph)";
+            color: gray;
+        }
+
+        /* -----------------------------
+           v. ATTRIBUTE SELECTOR
+        ----------------------------- */
+
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 5px;
+        }
+
+        input[placeholder] {
+            background-color: #f0f8ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Selectors Demonstration</h1>
+
+    <h2>Simple and Combinator Selectors</h2>
+    <div>
+        <p>This is inside a div (descendant + child).</p>
+        <p id="unique">This paragraph uses an ID selector.</p>
+        <p class="highlight">This one uses a class selector.</p>
+    </div>
+
+    <p>This paragraph comes right after h2 (adjacent sibling).</p>
+    <p>Another paragraph after h2 (general sibling).</p>
+
+    <h3>Pseudo-Class and Attribute Selectors</h3>
+    <a href="#">Hover over this link</a><br><br>
+    <input type="text" placeholder="Enter text here">
+    <input type="button" value="Click">
+
+</body>
+</html> 

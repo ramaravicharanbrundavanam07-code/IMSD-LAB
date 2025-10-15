@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="ram.js">
+
+    </script>
+    <script>
+        function InternalJS() {
+            document.write("welcome to InternalJS");
+        }
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+        function showConsole() {
+            console.log("This is a console log message!");
+        }
+        function showConfirm() {
+            var result = confirm("Do you confirm this action?");
+
+        }
+    </script>
+</head>
+
+<body>
+    <!-- <input type="button" value="InternalJS" onclick="InternalJS();" /><br><br>
+    <input type="button" value="ExternalJS" onclick="ExternalJS();" /><br><br> -->
+    <input type="button" value="Show Alert" onclick="showAlert();" /><br><br>
+    <input type="button" value="Show Console Log" onclick="showConsole();" /><br><br>
+    <input type="button" value="Show Confirm" onclick="showConfirm();" /><br><br>
+    <div id="output"></div>
+</body>
+
+</html>

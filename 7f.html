@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Regex Object Methods</title>
+</head>
+<body>
+<script>
+    var str = "Hello 123 World 456";
+    var pattern = /\d+/g;
+    var regex = new RegExp("World");
+
+    document.write("1. test() : " + regex.test(str) + "<br>");  
+    document.write("2. exec() : " + pattern.exec(str) + "<br>");  
+    document.write("3. match() : " + str.match(pattern) + "<br>");  
+    document.write("4. search() : " + str.search(regex) + "<br>");  
+    document.write("5. replace() : " + str.replace(pattern, 'X') + "<br>");  
+    document.write("6. split() : " + str.split(/\s+/) + "<br>");  
+</script>
+</body>
+</html>

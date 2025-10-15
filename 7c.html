@@ -1,0 +1,36 @@
+<html>
+
+<body>
+    <script>
+        var a = [69, 213, 133, 43, 12, 4];
+        document.write(a + "<br>");
+        document.write("1.length is : " + a.length + "<br>");
+        a.push(60);
+        document.write("2.pushing element : " + a + "<br>");
+        a.pop();
+        document.write("3.popping element : " + a + "<br>");
+        a.unshift(5);
+        document.write("4.unshifting element : " + a + "<br>");
+        a.shift();
+        document.write("5.shifting element : " + a + "<br>");
+        a.sort(function (a, b) { return a - b; });
+        document.write("6.sorting elements : " + a + "<br>");
+        a.reverse();
+        document.write("7.reverse elements : " + a + "<br>");
+        document.write("8.concatination : " + a.concat([200, 300]) + "<br>");
+        document.write("9.slice elements : " + a.slice(1, 3) + "<br>");
+        a.splice(2, 0, 99);
+        document.write("10.splice add : " + a + "<br>");
+        a.splice(2, 1);
+        document.write("11.splice remove : " + a + "<br>");
+        document.write("12.toString : " + a.toString() + "<br>");
+        document.write("13.indexOf : " + a.indexOf(12) + "<br>");
+        var squares = a.map(x => x * x);
+        document.write("14.map(square): " + squares + "<br>");
+        var found = a.find(x => x > 40);
+        document.write("15.find(x>40): " + found + "<br>");
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        function checkVoter() {
+            var name = prompt("Enter your name:");
+            var age = prompt("Enter your age:");
+            var canVote = (age !== null && Number(age) >= 18) ? "Yes" : "No";
+            // document.getElementById("rowData").innerHTML =
+            //     "<td>" + name + "</td>" + "<td>" + age + "</td>" + "<td>" + canVote + "</td>";
+
+            document.getElementById("1").innerHTML = name;
+            document.getElementById("2").innerHTML = age;
+            document.getElementById("3").innerHTML = canVote;
+
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="checkVoter()">Check Voter Eligibility</button>
+    <br><br>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Can Vote?</th>
+        </tr>
+        <tr id="rowData">
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>
