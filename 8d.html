@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    let person = {
+        name: "Ram",
+        age: 21,
+        city: "Hyderabad"
+    };
+
+    // for...in loops
+    document.write("<b>Using for...in:</b><br>");
+    for (let key in person) {
+        document.write(key + ": " + person[key] + "<br>");
+    }
+
+    document.write("<br>");
+
+    //  forEach with Object.entries()
+    document.write("<b>Using forEach:</b><br>");
+    Object.entries(person).forEach(function([key, value]) {
+        document.write(key + ": " + value + "<br>");
+    });
+
+    document.write("<br>");
+
+    //  for...of with Object.entries()
+    document.write("<b>Using for...of:</b><br>");
+    for (let [key, value] of Object.entries(person)) {
+        document.write(key + ": " + value + "<br>");
+    }
+</script>
+</body>
+</html>
